@@ -1,0 +1,12 @@
+th {
+    text-align: start;
+    padding: 0px 18px 10px;
+    font-size: 12px;
+    color: #7b7b7b;
+}
+td {
+    background-color: white;
+    padding: 13px 18px;
+    font-size: 15px;
+    font-weight: 500;
+}
