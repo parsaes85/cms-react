@@ -4,7 +4,7 @@ export default function CustomModal({
   type,
   setIsShowCustomModal,
   confirmHandler,
-  title
+  title,
 }) {
   useEffect(() => {
     const hideCustomModal = (e) => {
@@ -48,7 +48,9 @@ export default function CustomModal({
           </>
         ) : type === "success" ? (
           <>
-            <h1 className="font-semibold text-xl">{title} added successfully!</h1>
+            <h1 className="font-semibold text-xl">
+              {title} added successfully!
+            </h1>
             <div className="flex gap-4 justify-center mt-4">
               <button
                 className="bg-sky-700 text-gray-200 py-1 px-6 rounded-full"
@@ -58,7 +60,7 @@ export default function CustomModal({
               </button>
             </div>
           </>
-        ) : (
+        ) : type === "error" ? (
           <>
             <h1 className="font-semibold text-xl">Admin not found!</h1>
             <div className="flex gap-4 justify-center mt-4">
@@ -70,6 +72,20 @@ export default function CustomModal({
               </button>
             </div>
           </>
+        ) : (
+          <>
+          <h1 className="font-semibold text-xl">
+            {title}
+          </h1>
+          <div className="flex gap-4 justify-center mt-4">
+            <button
+              className="bg-sky-700 text-gray-200 py-1 px-6 rounded-full"
+              onClick={() => setIsShowCustomModal(false)}
+            >
+              Ok
+            </button>
+          </div>
+        </>
         )}
       </div>
     </div>
