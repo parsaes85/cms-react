@@ -106,7 +106,7 @@ export default function Login() {
                 </p>
               )}
               <span
-                className="absolute right-1 bottom-1 text-primary cursor-pointer"
+                className="absolute right-1 top-7 text-primary cursor-pointer"
                 onClick={changePasswordInputType}
               >
                 {passwordInputType === "password" ? (
