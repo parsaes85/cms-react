@@ -60,7 +60,7 @@ export default function EditProductModal({ setIsShowEditProductModal }) {
     >
       <div className="bg-white w-1/2 rounded-lg">
         <div className="rounded-xl p-6 ">
-          <h1 className="font-semibold text-xl">Edit user</h1>
+          <h1 className="font-semibold text-xl">Edit product</h1>
 
           <form
             className="mt-6 grid lg:grid-cols-2 gap-y-6 gap-x-16"
